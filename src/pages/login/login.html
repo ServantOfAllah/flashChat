@@ -10,7 +10,7 @@
     <img src="assets/img/logo.png" class='logo' alt="logo">
 
     <ion-card>
-        <ion-card-content>
+        <ion-card-content (loginStatus)="loginEvent($event)">
             <ion-item>
                 <ion-label floating>Email</ion-label>
                 <ion-input [(ngModel)]="account.email" type="email"></ion-input>
@@ -21,7 +21,7 @@
             </ion-item>
             <ion-item>
                 <button ion-button outline block (click)="login()">Login</button>
-                <button ion-button block color="danger" (click)="gotoPage('RegisterPage')">Register</button>
+                <button ion-button block color="danger" (click)="gotoRegPage()">Register</button>
             </ion-item>
         </ion-card-content>
     </ion-card>

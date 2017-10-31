@@ -1,12 +1,12 @@
-import { User } from '../../models/users/user';
+import { Profile } from '../../models/profile/profile';
 import { Message } from '../../models/messages/message';
 
 //creating a user
-const userList: User[] = [
-    { FirstName: 'Abdulmajid', LastName: 'Adams', email: 'mojeed4@yahoomail.com', avatar: 'assets/img/avatar.png' },
-    { FirstName: 'Sayed', LastName: 'Umar', email: 'sayed@yahoomail.com', avatar: 'assets/img/avatar.png' },
-    { FirstName: 'Raza', LastName: 'Mohammed', email: 'raza@yahoomail.com', avatar: 'assets/img/avatar.png' },
-    { FirstName: 'John', LastName: 'Doe', email: 'johnDoe@yahoomail.com', avatar: 'assets/img/avatar.png' }
+const userList: Profile[] = [
+    { FirstName: 'Abdulmajid', LastName: 'Adams', email: 'mojeed4@yahoomail.com', avatar: 'assets/img/avatar.png', dateOfBirth: new Date() },
+    { FirstName: 'Sayed', LastName: 'Umar', email: 'sayed@yahoomail.com', avatar: 'assets/img/avatar.png', dateOfBirth: new Date() },
+    { FirstName: 'Raza', LastName: 'Mohammed', email: 'raza@yahoomail.com', avatar: 'assets/img/avatar.png', dateOfBirth: new Date() },
+    { FirstName: 'John', LastName: 'Doe', email: 'johnDoe@yahoomail.com', avatar: 'assets/img/avatar.png', dateOfBirth: new Date() }
 ]
 
 const messageList: Message[] = [
